@@ -1,0 +1,8 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./aes/Cargo.toml"
+    ],
+    "cSpell.words": [
+        "prost"
+    ]
+}
