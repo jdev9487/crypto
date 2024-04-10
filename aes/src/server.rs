@@ -12,9 +12,9 @@ pub struct EncryptService {}
 
 #[tonic::async_trait]
 impl Encrypt for EncryptService {
-    async fn encrypt(&self, _request: Request<EncryptRequest>) -> Result<Response<EncryptResponse>, Status> {
+    async fn encrypt(&self, request: Request<EncryptRequest>) -> Result<Response<EncryptResponse>, Status> {
         let response = encrypt::EncryptResponse {
-            encoded: String::from("Hello")
+            encoded: format!("Encrypted {}", request.into_inner().message)
         };
 
         Ok(Response::new(response))

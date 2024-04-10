@@ -3,6 +3,7 @@
         "./aes/Cargo.toml"
     ],
     "cSpell.words": [
-        "prost"
+        "prost",
+        "protos"
     ]
 }
